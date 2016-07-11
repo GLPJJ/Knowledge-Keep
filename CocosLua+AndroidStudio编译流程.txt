@@ -1,0 +1,7 @@
+1.下载安装  Cocos2dx3.10（windows安装包），Android Studio最新版
+2.使用Setup.py脚本配置Windos环境
+3.使用命令行cocos new CocosSample -p com.cocos.sample -l lua -d D:\Work\Test 生成Lua项目
+4.用Android Studio打开$（CocosProject）\frameworks\runtime-src\proj.android-studio\app ，对一些错误进行修正，选一下2.1版本的Gradle
+5.把build_native.py放到 $（CocosProject）\frameworks\runtime-src\proj.android目录下，使用CMD执行，-h可以查看命令参数
+6.把当前目录下的libs和assets两个文件夹复制到$（CocosProject）\frameworks\runtime-src\proj.android-studio\app 
+7.运行Android Studio即可完成编译。
