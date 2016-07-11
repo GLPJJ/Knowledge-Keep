@@ -1,20 +1,14 @@
-AAR ÀàËÆ JAR µ«ÊÇ±ÈJAR¸ü¼ÓÇ¿´ó£¬²»Ö»ÓĞ.class£¬»¹ÓĞResÎÄ¼ş¡£
+AAR ç±»ä¼¼ JAR ä½†æ˜¯æ¯”JARæ›´åŠ å¼ºå¤§ï¼Œä¸åªæœ‰.classï¼Œè¿˜æœ‰Resæ–‡ä»¶ã€‚
 
-AARµÄrelease °æ±¾ÔÚAndroid StudioÖĞÉú³ÉÓĞµã²Ùµ°¡£¡£¡£
+AARçš„release ç‰ˆæœ¬åœ¨Android Studioä¸­ç”Ÿæˆæœ‰ç‚¹æ“è›‹ã€‚ã€‚ã€‚
 
-ÏÈËµÏÂdebug°æ±¾µÄÉú³É·½Ê½£º
-	ºÜ¼òµ¥£¬
-		1.Ê×ÏÈÎÒÃÇÓÃAndroid StudioĞÂ½¨Ò»¸öAndroid Project£¬Ò»Ö±Ä¬ÈÏ¾ÍºÃ£¬
-			È»ºóÎÒÃÇÔËĞĞ¿ÉÒÔÔÚÊÖ»úÉÏ¿´µ½Ò»¸öHello World¡£
-		2.µÚ¶ş²½£¬ÎÒÃÇµã»÷ File-¡·New-¡·New Module...->Ñ¡ÔñAndroid Library,
-			È»ºóÄ¬ÈÏNext,×îºóFinish£¬ÎÒÃÇµÃµ½Ò»¸öMy Library
-		3.Ñ¡ÖĞmylibraryÕâ¸ömodule£¬È»ºóµã»÷ Build-¡·Select Build Variant -¡·ÎÒÃÇ¿´µ½µ±Ç°ÉèÖÃÊÇdebug£¬
-		4.Build-¡·Make Module ¡®mylibrary¡¯ £¬µÈ±àÒëÍê³É£¬ÎÒÃÇ¿´µ½mylibraryÏÂÃæÓĞ¸öbuild/outputs/aar/  
-			ÒÔ¼°ÎÒÃÇÈçÔ¸ÒÔ³¥µÄmylibrary-debug.aar
-		5.ÎÒÃÇ»Øµ½µÚÈı²½£¬°Ñdebug¸Ä³Érelease£¬È»ºómake module£¬·¢ÏÖ²¢Ã»ÓĞÎÒÃÇÏ£Íû
-			µÄ mylibrary-release.aar£¬ÎÒÒ²²»ÖªµÀÎªÉ¶¡£¡£¡£
-		6.Ã»°ì·¨£¬ÎÒÏëÁË¸ö²»ÊÇ°ì·¨µÄ°ì·¨£¬File-¡·Project Structure-¡·Ñ¡ÖĞÎÒÃÇµÄapp 
-			£¬ÓÒ±ßÑ¡ÖĞDependencies£¬µãÓÒ±ßµÄÂÌÉ«+ºÅ£¬Ñ¡µÚÈı¸öModule Dependency-¡·
-			Ñ¡ÖĞÎÒÃÇµÄmylibrary£¬È»ºóÒ»Â·OK¡£
-		7.È»ºóÔÙÈ¥¿´¿´£¬ÚÀ£¬Äã»áÉñÆæµÄ·¢ÏÖÎÒÃÇµÄmylibrary-release.aarÒÑ¾­Éú³ÉÍê±Ï£¬OK£¬ÆäÊµ¾ÍÊÇ×Ô¶¯Ö´ĞĞÁËMake¡£
-		8.ºÃÁË¾Íµ½ÕâÀï£¬ÏÂ´ÎÓĞĞÂ·¢ÏÖÔÙ²¹³ä¡£
+å…ˆè¯´ä¸‹debugç‰ˆæœ¬çš„ç”Ÿæˆæ–¹å¼ï¼š
+	å¾ˆç®€å•ï¼Œ
+		1.é¦–å…ˆæˆ‘ä»¬ç”¨Android Studioæ–°å»ºä¸€ä¸ªAndroid Projectï¼Œä¸€ç›´é»˜è®¤å°±å¥½ï¼Œç„¶åæˆ‘ä»¬è¿è¡Œå¯ä»¥åœ¨æ‰‹æœºä¸Šçœ‹åˆ°ä¸€ä¸ªHello Worldã€‚
+		2.ç¬¬äºŒæ­¥ï¼Œæˆ‘ä»¬ç‚¹å‡» File-ã€‹New-ã€‹New Module...->é€‰æ‹©Android Library,ç„¶åé»˜è®¤Next,æœ€åFinishï¼Œæˆ‘ä»¬å¾—åˆ°ä¸€ä¸ªMy Library
+		3.é€‰ä¸­mylibraryè¿™ä¸ªmoduleï¼Œç„¶åç‚¹å‡» Build-ã€‹Select Build Variant -ã€‹æˆ‘ä»¬çœ‹åˆ°å½“å‰è®¾ç½®æ˜¯debugï¼Œ
+		4.Build-ã€‹Make Module â€˜mylibraryâ€™ ï¼Œç­‰ç¼–è¯‘å®Œæˆï¼Œæˆ‘ä»¬çœ‹åˆ°mylibraryä¸‹é¢æœ‰ä¸ªbuild/outputs/aar/  ä»¥åŠæˆ‘ä»¬å¦‚æ„¿ä»¥å¿çš„mylibrary-debug.aar
+		5.æˆ‘ä»¬å›åˆ°ç¬¬ä¸‰æ­¥ï¼ŒæŠŠdebugæ”¹æˆreleaseï¼Œç„¶åmake moduleï¼Œå‘ç°å¹¶æ²¡æœ‰æˆ‘ä»¬å¸Œæœ›çš„ mylibrary-release.aarï¼Œæˆ‘ä¹Ÿä¸çŸ¥é“ä¸ºå•¥ã€‚ã€‚ã€‚
+		6.æ²¡åŠæ³•ï¼Œæˆ‘æƒ³äº†ä¸ªä¸æ˜¯åŠæ³•çš„åŠæ³•ï¼ŒFile-ã€‹Project Structure-ã€‹é€‰ä¸­æˆ‘ä»¬çš„app ï¼Œå³è¾¹é€‰ä¸­Dependenciesï¼Œç‚¹å³è¾¹çš„ç»¿è‰²+å·ï¼Œé€‰ç¬¬ä¸‰ä¸ªModule Dependency-ã€‹é€‰ä¸­æˆ‘ä»¬çš„mylibraryï¼Œç„¶åä¸€è·¯OKã€‚
+		7.ç„¶åå†å»çœ‹çœ‹ï¼Œè¯¶ï¼Œä½ ä¼šç¥å¥‡çš„å‘ç°æˆ‘ä»¬çš„mylibrary-release.aarå·²ç»ç”Ÿæˆå®Œæ¯•ï¼ŒOKï¼Œå…¶å®å°±æ˜¯è‡ªåŠ¨æ‰§è¡Œäº†Makeã€‚
+		8.å¥½äº†å°±åˆ°è¿™é‡Œï¼Œä¸‹æ¬¡æœ‰æ–°å‘ç°å†è¡¥å……ã€‚
