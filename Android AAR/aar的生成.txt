@@ -1,0 +1,20 @@
+AAR 类似 JAR 但是比JAR更加强大，不只有.class，还有Res文件。
+
+AAR的release 版本在Android Studio中生成有点操蛋。。。
+
+先说下debug版本的生成方式：
+	很简单，
+		1.首先我们用Android Studio新建一个Android Project，一直默认就好，
+			然后我们运行可以在手机上看到一个Hello World。
+		2.第二步，我们点击 File-》New-》New Module...->选择Android Library,
+			然后默认Next,最后Finish，我们得到一个My Library
+		3.选中mylibrary这个module，然后点击 Build-》Select Build Variant -》我们看到当前设置是debug，
+		4.Build-》Make Module ‘mylibrary’ ，等编译完成，我们看到mylibrary下面有个build/outputs/aar/  
+			以及我们如愿以偿的mylibrary-debug.aar
+		5.我们回到第三步，把debug改成release，然后make module，发现并没有我们希望
+			的 mylibrary-release.aar，我也不知道为啥。。。
+		6.没办法，我想了个不是办法的办法，File-》Project Structure-》选中我们的app 
+			，右边选中Dependencies，点右边的绿色+号，选第三个Module Dependency-》
+			选中我们的mylibrary，然后一路OK。
+		7.然后再去看看，诶，你会神奇的发现我们的mylibrary-release.aar已经生成完毕，OK，其实就是自动执行了Make。
+		8.好了就到这里，下次有新发现再补充。
