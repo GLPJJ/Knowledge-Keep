@@ -12,3 +12,6 @@ AAR的release 版本在Android Studio中生成有点操蛋。。。
 		6.没办法，我想了个不是办法的办法，File-》Project Structure-》选中我们的app ，右边选中Dependencies，点右边的绿色+号，选第三个Module Dependency-》选中我们的mylibrary，然后一路OK。
 		7.然后再去看看，诶，你会神奇的发现我们的mylibrary-release.aar已经生成完毕，OK，其实就是自动执行了Make。
 		8.好了就到这里，下次有新发现再补充。
+		
+		引入的话只需要File-》New-》New Module...-》Import .JAR/.AAR Package ->Finish
+		发现还有一点，在引入aar的时候，需要把库依赖的dependencies放到你当前的app dependencies中。
